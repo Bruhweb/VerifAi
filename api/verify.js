@@ -18,7 +18,7 @@ export default async function handler(req, res) {
     const genAI = new GoogleGenerativeAI(apiKey);
 
     // Daftar model aktif terbaru (otomatis mencoba satu per satu jika ada yang 404)
-    const modelsToTry = ['gemini-2.5-flash', 'gemini-2.0-flash'];
+    const modelsToTry = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-3.8-flash'];
     let responseText = null;
     let lastError = null;
 
